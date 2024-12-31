@@ -1,11 +1,7 @@
 <?php 
 namespace App\Models;
-class Produto{
-    private $db;
-
-    public function __construct(\PDO $db){
-        $this->db=$db;
-    }
+use MF\Model\Database;
+class Produto extends Database{
 
     public function getProdutos(){
         $query="SELECT id, descricao, preco FROM tb_produtos";
