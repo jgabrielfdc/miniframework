@@ -16,7 +16,7 @@ class indexController extends Action{
 
        $this->view->dados=$arrayProdutos;
 
-       $this->render($path,"layout1");
+       $this->render($path,"layout_com_menu");
     }
 
     public function sobre_nos($path){
